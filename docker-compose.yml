@@ -19,11 +19,8 @@ services:
       - zookeeper
     ports:
       - "9092:9092"
-<<<<<<< HEAD
-=======
     volumes:
       - ./.lib:/usr/share/confluent-hub-components
->>>>>>> feature/tools-ksql
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
@@ -37,11 +34,7 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
       CONFLUENT_METRICS_REPORTER_BOOTSTRAP_SERVERS: broker:9092
       CONFLUENT_METRICS_REPORTER_ZOOKEEPER_CONNECT: zookeeper:2181
-<<<<<<< HEAD
-      CONFLUENT_METRICS_REPORTER_TOPIC_REPLICAS: 1117
-=======
       CONFLUENT_METRICS_REPORTER_TOPIC_REPLICAS: 1
->>>>>>> feature/tools-ksql
       CONFLUENT_METRICS_ENABLE: 'true'
       CONFLUENT_SUPPORT_CUSTOMER_ID: 'anonymous'
 
